@@ -1,0 +1,9 @@
+.card-page{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.group-icon{
+    width:20px;
+}
