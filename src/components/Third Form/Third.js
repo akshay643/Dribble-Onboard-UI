@@ -6,7 +6,7 @@ import "./Third.css"
 
 import Card from 'react-bootstrap/Card';
 
-import group from "./img/group.png"
+import group from "../img/group.png"
 
 
 function Third() {

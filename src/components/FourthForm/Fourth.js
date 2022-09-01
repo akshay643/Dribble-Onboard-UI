@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./Fourth.css";
 
-import Tick from "./img/tick.png"
+import Tick from "../img/tick.png"
 
 function Fourth() {
   return (
@@ -11,7 +11,7 @@ function Fourth() {
 
         <div className='greeting my-4'>
         <h2 className='text-center fw-bold'>Congratulations, Eren!</h2>
-        <p style={{color: "grey"}}>You have completed onboarding, you can start using Eden</p>
+        <p className='text-muted'>You have completed onboarding, you can start using Eden</p>
         </div>
 
     </div>

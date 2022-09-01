@@ -1,16 +1,15 @@
 import React, {useState} from 'react'
 
-import First from "./First"
+import First from "./FirstForm/First"
 
-import Second from './Second';
+import Second from './SecondForm/Second';
 
-import Third from './Third';
+import Third from './Third Form/Third';
 
-import Fourth from "./Fourth"
-
-// import ProgressBar from 'react-bootstrap/ProgressBar';
+import Fourth from "./FourthForm/Fourth"
 
 import { ProgressBar, Step } from "react-step-progress-bar";
+
 import "react-step-progress-bar/styles.css";
 
 import "./Form.css"
@@ -44,6 +43,10 @@ function Form() {
         }
         if(page === 3){
             return <Fourth />
+        } else {
+            if(page === 4){
+                return null
+            }
         }
     }
  
@@ -58,10 +61,11 @@ function Form() {
             </div>
 
 
-            <div className='progressbar my-3'>
+            <div className='progressbar my-3 d-flex align-items-center justify-content-center'>
         
                 <ProgressBar
                     height= {2}
+                    width={300}
                     percent={progress}
                     filledBackground="rgb(96, 83, 221)">
                     <Step transition="scale">
@@ -97,7 +101,7 @@ function Form() {
                 <div className='body'>{pagedisplay()}</div>
 
                 <div className='footer'>
-                    <button style={{backgroundColor:"#6053DD", color:"white"}} className="btn w-100 py-3" onClick = {clickhandler}>{page===3 ? "Launch Eden" : "Create Workspace" }</button>
+                    <button style={{backgroundColor:"#6053DD", color:"white"}} className="btn py-3 w-75 m-auto" onClick = {clickhandler}>{page===3 ? "Launch Eden" : "Create Workspace" }</button>
                 </div>
 
             </div>
